@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b6805b29a3ca6044481bff364ec6f040
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _addedNetworkObject: {instanceID: 0}
+  - _networkObjectCache: {instanceID: 0}
+  - entityType: {instanceID: 0}
+  - entityManager: {fileID: 11400000, guid: 329597eb757baae4e8f178c213b953e6, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

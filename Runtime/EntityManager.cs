@@ -15,13 +15,6 @@ namespace Core
 
         [Space(10)]
 
-        [SerializeField]
-        EntityGroup playerEntityGroup;
-        [SerializeField]
-        EntityGroup enemyEntityGroup;
-        [SerializeField]
-        EntityGroup pickupEntityGroup;
-
         [NonSerialized]
         private List<Entity> entityList = new();
 
@@ -30,10 +23,6 @@ namespace Core
         private Dictionary<EntityGroup, List<Entity>> entityGroupDictionary = new();
 
         public Entity[] entities => entityList.ToArray();
-        public Entity[] nonPlayerEntities => GetEntitiesNotInGroup(playerEntityGroup);        
-        public Entity[] playerEntities => GetEntitiesInGroup(playerEntityGroup);
-        public Entity[] enemyEntities => GetEntitiesInGroup(enemyEntityGroup);
-        public Entity[] pickupEntities => GetEntitiesInGroup(pickupEntityGroup);
 
         public int entityCount => entityList.Count;
 

@@ -107,6 +107,9 @@ namespace Core
 
         public void RegisterEntity(Entity entity)
         {
+            if (entity.entityType == null)
+                Debug.LogWarning($"Entity {entity.name} does not have an EntityType assigned! It will not be registered to any EntityType or EntityGroup lists, but it will still be registered to the EntityManager and can be accessed through GetAllEntities() or GetEntitiesNotInGroup() methods.", entity.gameObject);
+
             if (entity.entityType != null)
             {
 

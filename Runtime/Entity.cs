@@ -171,6 +171,9 @@ public sealed class Entity : NetworkBehaviour
         if (activate)
             SetActive(true);
 
+        if (entityManager == null)
+            Debug.LogWarning($"Entity {entityType} does not have an EntityManager reference. Please assign one to ensure the Entity is registered.");
+
         entityManager?.RegisterEntity(this);
 
         onSpawn?.Invoke(this);
